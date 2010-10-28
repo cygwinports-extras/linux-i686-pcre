@@ -1,0 +1,10 @@
+CROSS_HOST="i686-pc-linux-gnu"
+ORIG_PN="pcre"
+inherit cross
+
+DESCRIPTION="PCRE library for Linux i686 toolchain"
+HOMEPAGE="http://www.pcre.org/"
+SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${ORIG_PN}-${PV}.tar.bz2"
+
+NO_AUTOHEADER=1
+CYGCONF_ARGS="--enable-newline-is-lf --enable-unicode-properties --enable-utf8"
